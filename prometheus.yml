@@ -31,7 +31,7 @@ scrape_configs:
           app: "prometheus"
   - job_name: 'ec2_instances'
     ec2_sd_configs:
-      - region: us-east-1
+      - region: <YOUR_AWS_REGION>
         port: 9100
         filters:
           - name: "tag:Monitoring"
